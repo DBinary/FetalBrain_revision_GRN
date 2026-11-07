@@ -1,5 +1,0 @@
-item	original_path	version_or_size	provenance_or_status	portable_copy
-host_plot_analysis	/opt/miniforge/bin/python	3.10.14	Existing interpreter; exact package state in host_pip_freeze.txt	
-train	/data/lvyongji/envs/conda_envs/spagrn/bin/python	3.8.20	Existing interpreter; exact package state in train_pip_freeze.txt	
-spagrn_python_source	/data/lvyongji/envs/conda_envs/spagrn/lib/python3.8/site-packages/spagrn	1.1.4	Only .py files, no bytecode/binaries; tar.gz sha256 4f437c819bab1582bd9f71f0ead858c002823d5740844ee889461194297b62d1	environment/spagrn_python_source.tar.gz
-arial_font	/tmp/omicverse_arial.ttf	367112	Downloaded by Omicverse from https://github.com/kavin808/arial.ttf/raw/refs/heads/master/arial.ttf; sha256 413c78f91bd39e134f3c0bb204b1d5a90f29df9efddc8fd26950a178058d5d74	environment/Arial.ttf

@@ -1,7 +1,0 @@
-run	downsampling_seed	aucell_seed	n_bins	n_genes	total_counts	regulons	final_edges	grn_notebook	regulons_file	motifs_file	final_edges_file
-full		20261014	117867	15541	270918153	260	68492	notebooks/grn/full.ipynb	data/grn/full/regulons.json	data/grn/full/motifs.csv	data/grn/full/final_edges.tsv.gz
-rep01	20261016	20261014	117867	15541	135429514	220	33270	notebooks/grn/rep01.ipynb	data/grn/rep01/regulons.json	data/grn/rep01/motifs.csv	data/grn/rep01/final_edges.tsv.gz
-rep02	20261017	20261014	117867	15541	135429514	221	33212	notebooks/grn/rep02.ipynb	data/grn/rep02/regulons.json	data/grn/rep02/motifs.csv	data/grn/rep02/final_edges.tsv.gz
-rep03	20261018	20261014	117867	15541	135429514	213	33745	notebooks/grn/rep03.ipynb	data/grn/rep03/regulons.json	data/grn/rep03/motifs.csv	data/grn/rep03/final_edges.tsv.gz
-rep04	20261019	20261014	117867	15541	135429514	218	33381	notebooks/grn/rep04.ipynb	data/grn/rep04/regulons.json	data/grn/rep04/motifs.csv	data/grn/rep04/final_edges.tsv.gz
-rep05	20261020	20261014	117867	15541	135429514	212	34063	notebooks/grn/rep05.ipynb	data/grn/rep05/regulons.json	data/grn/rep05/motifs.csv	data/grn/rep05/final_edges.tsv.gz
