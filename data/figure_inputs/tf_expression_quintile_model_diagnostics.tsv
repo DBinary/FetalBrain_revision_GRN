@@ -1,0 +1,5 @@
+exposure	outcome	converged	n_observations	n_TF_clusters	design_condition_number
+expression	module_recovered	True	1300	260	11.4294108086865
+expression	target_retention	True	1300	260	11.4294108086865
+detection	module_recovered	True	1300	260	11.418220983960945
+detection	target_retention	True	1300	260	11.418220983960945

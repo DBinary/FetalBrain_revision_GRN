@@ -1,0 +1,16 @@
+**Fig. X. Effects of count downsampling on gene regulatory networks inferred from macaque brain spatial transcriptomic data.**
+GRNs inferred from full-count bin100 data were compared with those inferred from five independently downsampled datasets. Within each of the 117,867 spatial bins, counts were sampled without replacement to half the full-data total, rounded down. The full-data network, containing 260 TF-associated regulons and 68,492 directed TF–target edges, served as the reference.
+
+**a,** Relative regulon counts after downsampling. Total inferred regulons and retained full-data regulons are shown as percentages of the 260 full-data regulons. Retained regulons were matched by TF identity and regulatory sign, without requiring identical target sets.
+
+**b,** Relative edge counts after downsampling. Total inferred edges and retained full-data edges are shown as percentages of the 68,492 full-data edges. In panels a and b, bars indicate means, error bars indicate sample standard deviations, and points represent the five technical downsampling repeats.
+
+**c,** Pearson correlations between full-data and downsampled AUCell activity scores for shared regulons, calculated across the same 117,867 matched spatial bins. Each network was scored using its own inferred regulon target sets and weights. Each point represents one shared regulon; rep01–rep05 contain 183, 181, 181, 178 and 175 shared regulons, respectively.
+
+**d,** Jaccard overlap between full-data and downsampled top-$k$ target sets, ranked by decreasing inferred importance, for $k=20,40,60,80$ and $100$. Within each repeat, the same subset of shared regulons with at least 100 final targets in both networks was used for all five cutoffs. These subsets contained 67, 60, 61, 64 and 62 regulons for rep01–rep05, respectively. Each point represents the median regulon-level Jaccard index within one repeat.
+
+**e,** Recovery of full-data regulons stratified by TF expression. The 260 TFs represented in the full-data network were ranked by their mean bin-level expression in the full data, measured as counts per 10,000 total counts (CP10K) and averaged across all bins including zeros, and divided into five equal groups of 52 TFs. Groups are displayed from the highest (Q5) to the lowest (Q1) expression quintile. Each point represents the proportion of the 52 reference regulons recovered in one downsampling repeat.
+
+**f,** Recovery of full-data target-gene relationships within the same TF expression groups. Each point represents the number of recovered full-data TF–target edges divided by the total number of full-data TF–target edges in that group, giving an edge-weighted recovery rate. Missing regulons were counted as unrecovered in panel e and contributed zero recovered edges in panel f while remaining in the reference denominators.
+
+For boxplots in panels c–f, center lines denote medians, boxes denote interquartile ranges (IQRs), and whiskers extend to the most extreme values within 1.5$\times$IQR of the box. All observations are overlaid: points represent shared regulons in panel c and technical-repeat summaries in panels d–f. The five repeats quantify technical downsampling variability within the same dataset. Abbreviations: GRN, gene regulatory network; TF, transcription factor.

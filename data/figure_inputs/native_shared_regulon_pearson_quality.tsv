@@ -1,0 +1,6 @@
+run	n_bins_full	n_bins_sample	n_shared_regulons	full_bin_ids_unique	sample_bin_ids_unique	same_bin_order	aligned_bin_order	full_auc_matches_final_regulons	sample_auc_matches_final_regulons	nonfinite_full_scores	nonfinite_sample_scores
+rep01	117867	117867	183	True	True	True	True	True	True	0	0
+rep02	117867	117867	181	True	True	True	True	True	True	0	0
+rep03	117867	117867	181	True	True	True	True	True	True	0	0
+rep04	117867	117867	178	True	True	True	True	True	True	0	0
+rep05	117867	117867	175	True	True	True	True	True	True	0	0

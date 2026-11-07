@@ -1,0 +1,9 @@
+exposure	term	VIF
+expression	z_log_tf_mean_cp10k	1.252334738296503
+expression	z_log_n_targets_full	1.588962664637964
+expression	z_log_target_mean_cp10k	25.454535325763366
+expression	z_target_detection_rate	25.757794380600796
+detection	z_tf_detection_rate	1.2430742632762166
+detection	z_log_n_targets_full	1.5961660501824786
+detection	z_log_target_mean_cp10k	25.63493643191212
+detection	z_target_detection_rate	25.945641182570572

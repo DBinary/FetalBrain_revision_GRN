@@ -1,0 +1,6 @@
+run	seed	n_bins	n_genes	total_counts	nnz	count_target_mismatches	source_bound_violations	rep01_matrix_differences	mean_detected_genes	input
+rep01	20261016	117867	15541	135429514	82157995	0	0	0.0	697.0398415162853	/data/hulei/HongtaoYu_Lab/Fetal_brain/Revision/GRN/bin100/lowdown/T577_bin100_counts50.h5ad
+rep02	20261017	117867	15541	135429514	82156433	0	0		697.0265892913199	/data/hulei/HongtaoYu_Lab/Fetal_brain/Revision/GRN/bin100/robustness/data/rep02_counts50.h5ad
+rep03	20261018	117867	15541	135429514	82150103	0	0		696.9728846920682	/data/hulei/HongtaoYu_Lab/Fetal_brain/Revision/GRN/bin100/robustness/data/rep03_counts50.h5ad
+rep04	20261019	117867	15541	135429514	82157580	0	0		697.0363205986408	/data/hulei/HongtaoYu_Lab/Fetal_brain/Revision/GRN/bin100/robustness/data/rep04_counts50.h5ad
+rep05	20261020	117867	15541	135429514	82152858	0	0		696.9962584947441	/data/hulei/HongtaoYu_Lab/Fetal_brain/Revision/GRN/bin100/robustness/data/rep05_counts50.h5ad

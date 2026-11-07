@@ -1,0 +1,312 @@
+{
+  "schema_version": 1,
+  "export": {
+    "status": "passed",
+    "actual_execution": true,
+    "started_utc": "2026-11-07T06:19:09.171005+00:00",
+    "finished_utc": "2026-11-07T06:19:19.195137+00:00",
+    "python": "/data/lvyongji/envs/conda_envs/spagrn/bin/python",
+    "pyscenic_version": "0.12.1",
+    "source_results": "historical native JSON and motif-pruning CSV copied according to bin100/robustness/manifest.json",
+    "source_hash_manifest": "manifests/grn_sources.tsv",
+    "method": "load_motifs -> df2regulons -> gene2weight, restricted exactly to native JSON memberships",
+    "self_edges": "retained",
+    "negative_weights": "retained",
+    "raw_adjacency_used": false,
+    "training_performed": false,
+    "rows": [
+      {
+        "run": "full",
+        "n_regulons": 260,
+        "n_edges": 68492,
+        "self_edges": 112,
+        "negative_weights": 13,
+        "zero_weights": 0,
+        "min_weight": -0.002939829523312215,
+        "max_weight": 1.0,
+        "output": "data/grn/full/final_edges.tsv.gz",
+        "bytes": 960885,
+        "sha256": "b25d9dfc848e3ec6c3469747f772fccd8039cbf039226cc5e5036cd6b20849c2",
+        "native_membership_exact": true,
+        "weights_roundtrip_exact": true
+      },
+      {
+        "run": "rep01",
+        "n_regulons": 220,
+        "n_edges": 33270,
+        "self_edges": 90,
+        "negative_weights": 15,
+        "zero_weights": 0,
+        "min_weight": -0.00814570054264519,
+        "max_weight": 1.0,
+        "output": "data/grn/rep01/final_edges.tsv.gz",
+        "bytes": 468929,
+        "sha256": "6d6fbf226e447956c9c9d0d423e4f9b3d39613e0aca7a9fc6245b9da98c60423",
+        "native_membership_exact": true,
+        "weights_roundtrip_exact": true
+      },
+      {
+        "run": "rep02",
+        "n_regulons": 221,
+        "n_edges": 33212,
+        "self_edges": 93,
+        "negative_weights": 8,
+        "zero_weights": 0,
+        "min_weight": -0.0023987181170076603,
+        "max_weight": 1.0,
+        "output": "data/grn/rep02/final_edges.tsv.gz",
+        "bytes": 468405,
+        "sha256": "b38e52fa1abdc8659eedd0435cabd5c00873810dea3b4b379e9d5cecd3496ce9",
+        "native_membership_exact": true,
+        "weights_roundtrip_exact": true
+      },
+      {
+        "run": "rep03",
+        "n_regulons": 213,
+        "n_edges": 33745,
+        "self_edges": 90,
+        "negative_weights": 14,
+        "zero_weights": 0,
+        "min_weight": -0.002110657424215,
+        "max_weight": 1.0,
+        "output": "data/grn/rep03/final_edges.tsv.gz",
+        "bytes": 474986,
+        "sha256": "aa4221425cfbda4dbef059947d42afdc8f114f7601678d124be76cecd2dd4314",
+        "native_membership_exact": true,
+        "weights_roundtrip_exact": true
+      },
+      {
+        "run": "rep04",
+        "n_regulons": 218,
+        "n_edges": 33381,
+        "self_edges": 90,
+        "negative_weights": 14,
+        "zero_weights": 0,
+        "min_weight": -0.0015367858587056241,
+        "max_weight": 1.0,
+        "output": "data/grn/rep04/final_edges.tsv.gz",
+        "bytes": 470307,
+        "sha256": "50d50c089c8e0018e5ef0644799ed68818b6f6c872a599c53b602ec3f719d8d1",
+        "native_membership_exact": true,
+        "weights_roundtrip_exact": true
+      },
+      {
+        "run": "rep05",
+        "n_regulons": 212,
+        "n_edges": 34063,
+        "self_edges": 82,
+        "negative_weights": 14,
+        "zero_weights": 0,
+        "min_weight": -0.003791045568407041,
+        "max_weight": 1.0,
+        "output": "data/grn/rep05/final_edges.tsv.gz",
+        "bytes": 480600,
+        "sha256": "ab14fca18ea1ebd405b21b455021b50fe6c042852701916649a21f4f7a6d36d9",
+        "native_membership_exact": true,
+        "weights_roundtrip_exact": true
+      }
+    ]
+  },
+  "offline_analysis": {
+    "status": "passed",
+    "actual_execution": true,
+    "notebook": "notebooks/analysis/02_network_topk.ipynb",
+    "started_utc": "2026-11-07T06:29:59.532613+00:00",
+    "finished_utc": "2026-11-07T06:30:00.813569+00:00",
+    "python": "/opt/miniforge/bin/python",
+    "pandas_version": "2.2.3",
+    "computation_inputs": "package-native regulons.json and exported final_edges.tsv.gz only; workflow_manifest supplies run/seed/path metadata",
+    "input_checks": [
+      {
+        "run": "full",
+        "n_regulons": 260,
+        "n_edges": 68492,
+        "json_sha256": "f0ed800d32613c3de28ecbeae711814cb44898dcdf920eaff761932bd1c866d3",
+        "final_edges_sha256": "b25d9dfc848e3ec6c3469747f772fccd8039cbf039226cc5e5036cd6b20849c2",
+        "membership_exact": true
+      },
+      {
+        "run": "rep01",
+        "n_regulons": 220,
+        "n_edges": 33270,
+        "json_sha256": "0af5b1ff3edc47cb3f427031d1ab1f482f83bfe4f5b5243892de623bba12b12d",
+        "final_edges_sha256": "6d6fbf226e447956c9c9d0d423e4f9b3d39613e0aca7a9fc6245b9da98c60423",
+        "membership_exact": true
+      },
+      {
+        "run": "rep02",
+        "n_regulons": 221,
+        "n_edges": 33212,
+        "json_sha256": "a4b41aaabe953379bb10fa620bc1f24342b42dcdda0c1f96dcc42bf01af4c7e6",
+        "final_edges_sha256": "b38e52fa1abdc8659eedd0435cabd5c00873810dea3b4b379e9d5cecd3496ce9",
+        "membership_exact": true
+      },
+      {
+        "run": "rep03",
+        "n_regulons": 213,
+        "n_edges": 33745,
+        "json_sha256": "4be9a9ba1e30b0394bf9f0d7f04346bab1672018cf7fcd9a4a6f9f3b7446e7a9",
+        "final_edges_sha256": "aa4221425cfbda4dbef059947d42afdc8f114f7601678d124be76cecd2dd4314",
+        "membership_exact": true
+      },
+      {
+        "run": "rep04",
+        "n_regulons": 218,
+        "n_edges": 33381,
+        "json_sha256": "dfdb7d67c15f57b9f928daa0ab0dbfaaa455f4a1724d19f1c47fb18d244ae75a",
+        "final_edges_sha256": "50d50c089c8e0018e5ef0644799ed68818b6f6c872a599c53b602ec3f719d8d1",
+        "membership_exact": true
+      },
+      {
+        "run": "rep05",
+        "n_regulons": 212,
+        "n_edges": 34063,
+        "json_sha256": "7804349af479ccc1b17fbfe57b53f9d9027a13462e32c05c991409b8a3995809",
+        "final_edges_sha256": "ab14fca18ea1ebd405b21b455021b50fe6c042852701916649a21f4f7a6d36d9",
+        "membership_exact": true
+      }
+    ],
+    "network_edge_key": [
+      "regulon",
+      "target"
+    ],
+    "ranking": {
+      "columns": [
+        "weight",
+        "target"
+      ],
+      "ascending": [
+        false,
+        true
+      ],
+      "absolute_weight": false
+    },
+    "top100_subset": {
+      "selection": "both full and repeat native target counts >= 100; fixed once per repeat",
+      "k": [
+        20,
+        40,
+        60,
+        80,
+        100
+      ],
+      "regulons_per_repeat": {
+        "rep01": 67,
+        "rep02": 60,
+        "rep03": 61,
+        "rep04": 64,
+        "rep05": 62
+      },
+      "reference_eligible": 116
+    },
+    "comparisons": [
+      {
+        "file": "network_runs.tsv",
+        "status": "passed",
+        "keys": [
+          "run"
+        ],
+        "rows_compared": 5,
+        "key_sets_exact": true,
+        "missing_value_positions_exact": true,
+        "historical_source": "bin100/robustness/results/network_runs.tsv",
+        "historical_packaged_path": "data/figure_inputs/network_runs.tsv",
+        "historical_sha256": "ef3f598ae47f6f71d687b383dde298613d3f055fc04d57b280c99b0eb6616bb1",
+        "recomputed_packaged_path": "data/analysis_recomputed/network_runs.tsv",
+        "numeric_rtol": 1e-12,
+        "numeric_atol": 1e-12,
+        "max_absolute_numeric_difference": 5.551115123125783e-17
+      },
+      {
+        "file": "network_regulons.tsv",
+        "status": "passed",
+        "keys": [
+          "run",
+          "regulon"
+        ],
+        "rows_compared": 1486,
+        "key_sets_exact": true,
+        "missing_value_positions_exact": true,
+        "historical_source": "bin100/robustness/results/network_regulons.tsv",
+        "historical_packaged_path": "data/figure_inputs/network_regulons.tsv",
+        "historical_sha256": "94a516f2a156c54c5e194792333a28b120dc081aa08b6683e545f19ea8ce21cf",
+        "recomputed_packaged_path": "data/analysis_recomputed/network_regulons.tsv",
+        "numeric_rtol": 1e-12,
+        "numeric_atol": 1e-12,
+        "max_absolute_numeric_difference": 1.1102230246251565e-16
+      },
+      {
+        "file": "network_topk_top100_subset.tsv",
+        "status": "passed",
+        "keys": [
+          "run",
+          "k"
+        ],
+        "rows_compared": 25,
+        "key_sets_exact": true,
+        "missing_value_positions_exact": true,
+        "historical_source": "bin100/robustness/results/network_topk_top100_subset.tsv",
+        "historical_packaged_path": "data/figure_inputs/network_topk_top100_subset.tsv",
+        "historical_sha256": "0328dd75654d84d8d6633211a168381486ff25f22b359024941352726cb93ecd",
+        "recomputed_packaged_path": "data/analysis_recomputed/network_topk_top100_subset.tsv",
+        "numeric_rtol": 1e-12,
+        "numeric_atol": 1e-12,
+        "max_absolute_numeric_difference": 8.326672684688674e-17
+      },
+      {
+        "file": "network_topk_top100_subset_per_regulon.tsv",
+        "status": "passed",
+        "keys": [
+          "run",
+          "k",
+          "regulon"
+        ],
+        "rows_compared": 1570,
+        "key_sets_exact": true,
+        "missing_value_positions_exact": true,
+        "historical_source": "bin100/robustness/results/network_topk_top100_subset_per_regulon.tsv",
+        "historical_packaged_path": "data/figure_inputs/network_topk_top100_subset_per_regulon.tsv",
+        "historical_sha256": "94108706097a1ee2e190f0843c104a745d03250304ee16979a8728104cac0cba",
+        "recomputed_packaged_path": "data/analysis_recomputed/network_topk_top100_subset_per_regulon.tsv",
+        "numeric_rtol": 1e-12,
+        "numeric_atol": 1e-12,
+        "max_absolute_numeric_difference": 1.1102230246251565e-16
+      }
+    ],
+    "output_files": [
+      {
+        "path": "data/analysis_recomputed/network_runs.tsv",
+        "rows": 5,
+        "sha256": "ef3f598ae47f6f71d687b383dde298613d3f055fc04d57b280c99b0eb6616bb1"
+      },
+      {
+        "path": "data/analysis_recomputed/network_regulons.tsv",
+        "rows": 1486,
+        "sha256": "94a516f2a156c54c5e194792333a28b120dc081aa08b6683e545f19ea8ce21cf"
+      },
+      {
+        "path": "data/analysis_recomputed/network_topk.tsv",
+        "rows": 45,
+        "sha256": "bde91f10ca202ede412c9ca18dd5c643a89dfa5d832a58c6db6262645f4bfc84"
+      },
+      {
+        "path": "data/analysis_recomputed/network_summary.tsv",
+        "rows": 10,
+        "sha256": "61105190c97205e4eb2d8ea5d20e22ebfc09379d37d800b35536a0c5111cc6c4"
+      },
+      {
+        "path": "data/analysis_recomputed/network_topk_top100_subset_per_regulon.tsv",
+        "rows": 1570,
+        "sha256": "94108706097a1ee2e190f0843c104a745d03250304ee16979a8728104cac0cba"
+      },
+      {
+        "path": "data/analysis_recomputed/network_topk_top100_subset.tsv",
+        "rows": 25,
+        "sha256": "0328dd75654d84d8d6633211a168381486ff25f22b359024941352726cb93ecd"
+      }
+    ],
+    "external_large_files_opened": false,
+    "training_performed": false,
+    "verification_boundary": "Native membership/export consistency and network/Top-k numerical agreement; no inference rerun or biological validation."
+  }
+}

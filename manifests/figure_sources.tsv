@@ -1,0 +1,7 @@
+panel	figure	png	pdf	notebook	cell_indices_zero_based	inputs	input_table_directory	definition
+a	Relative_regulon_count	figures/Relative_regulon_count.png	figures/Relative_regulon_count.pdf	T577_SpaGRN_visualization.ipynb	2;5;6	network_runs.tsv;data/grn/full/regulons.json	data/figure_inputs	full denominator 260
+b	Relative_edge_count	figures/Relative_edge_count.png	figures/Relative_edge_count.pdf	T577_SpaGRN_visualization.ipynb	2;3	network_runs.tsv;data/grn/full/regulons.json	data/figure_inputs	full denominator 68492
+c	Shared_regulon_Pearson	figures/Shared_regulon_Pearson.png	figures/Shared_regulon_Pearson.pdf	T577_SpaGRN_visualization.ipynb	8;9	native_shared_regulon_pearson.tsv	data/figure_inputs	183/181/181/178/175 shared regulons; 117867 bins
+d	Topk_Jaccard_top100_subset	figures/Topk_Jaccard_top100_subset.png	figures/Topk_Jaccard_top100_subset.pdf	T577_SpaGRN_visualization.ipynb	11;12	network_topk_top100_subset.tsv	data/figure_inputs	five repeat medians per k; fixed subset within repeat
+e	TF_expression_module_recovery	figures/TF_expression_module_recovery.png	figures/TF_expression_module_recovery.pdf	T577_SpaGRN_visualization.ipynb	14;15	tf_expression_quintile_group_runs.tsv	data/figure_inputs	five repeats per group; 52 full TFs
+f	TF_expression_target_recovery	figures/TF_expression_target_recovery.png	figures/TF_expression_target_recovery.pdf	T577_SpaGRN_visualization.ipynb	14;15	tf_expression_quintile_group_runs.tsv	data/figure_inputs	five repeats per group; edge-weighted recovery

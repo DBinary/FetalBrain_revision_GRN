@@ -1,0 +1,57 @@
+{
+  "native_rankings_ready": true,
+  "reference_strategy": "native_genome_custom_cistarget",
+  "species": "Macaca fascicularis",
+  "assembly": "Macaca_fascicularis_5.0",
+  "ensembl_release": 91,
+  "genome_fasta": "/data/hulei/HongtaoYu_Lab/Fetal_brain/Revision/GRN/GRN_resource/macaque/Macaca_fascicularis.Macaca_fascicularis_5.0.dna.toplevel.fa.gz",
+  "gene_annotation": "/data/hulei/HongtaoYu_Lab/Fetal_brain/Revision/GRN/GRN_resource/macaque/Macaca_fascicularis.Macaca_fascicularis_5.0.91.gtf.gz",
+  "motif_archive": "/data/hulei/HongtaoYu_Lab/Fetal_brain/Revision/GRN/GRN_resource/macaque/v10nr_clust_public.zip",
+  "motif_collection": "v10nr_public_singletons",
+  "source_commit": "304d5dc1b15e5c923908a50a1ec291c3faaccf9c",
+  "ranking_files": [
+    "/data/hulei/HongtaoYu_Lab/Fetal_brain/Revision/GRN/GRN_resource/macaque/build/macfas5_Ensembl91_10kbp_up_10kbp_down_v10nr_public.genes_vs_motifs.rankings.feather",
+    "/data/hulei/HongtaoYu_Lab/Fetal_brain/Revision/GRN/GRN_resource/macaque/build/macfas5_Ensembl91_500bp_up_100bp_down_v10nr_public.genes_vs_motifs.rankings.feather"
+  ],
+  "motif_annotation_file": "/data/hulei/HongtaoYu_Lab/Fetal_brain/Revision/GRN/GRN_resource/macaque/build/motifs-v10nr-public.macaca_fascicularis.Ensembl91.one2one.tbl",
+  "tf_list_file": "/data/hulei/HongtaoYu_Lab/Fetal_brain/Revision/GRN/GRN_resource/macaque/build/T577_macaca_fascicularis.Ensembl91.one2one.tfs.txt",
+  "proposed_tss_windows": [
+    "10000bp_upstream_10000bp_downstream",
+    "500bp_upstream_100bp_downstream"
+  ],
+  "required_before_inference": [
+    "gene_identifier_coverage_and_ambiguity_audit",
+    "explicit_macaque_TF_orthology_mapping",
+    "native_gene_based_ranking_build",
+    "motif_ID_annotation_consistency_validation"
+  ],
+  "evidence": {
+    "data_paper": "https://doi.org/10.1016/j.cell.2023.06.009",
+    "spagrn_paper": "https://doi.org/10.1016/j.cels.2025.101243",
+    "author_protocol": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12756632/",
+    "macaque_custom_reference_precedent": "https://www.nature.com/articles/s41467-022-31770-x"
+  },
+  "reference_input_downloads_complete": true,
+  "input_compatibility_audit": "/data/hulei/HongtaoYu_Lab/Fetal_brain/Revision/GRN/GRN_resource/macaque/input_compatibility_audit.json",
+  "gene_mapping_policy_recommendation": "Unambiguous native gene names match directly; retain full input data and explicitly flag unmapped/multiple-locus features for motif analysis.",
+  "tf_mapping_policy": "T577 input symbols with unique native GTF loci, Ensembl91 ortholog_one2one, available public PWM exact-ID overlap; human TF experimental motifs transferred by conserved orthology; native binding not directly experimentally validated",
+  "tf_annotation_preparation": "build/tf_annotation_preparation.json",
+  "native_tf_count": 1151,
+  "native_gene_background": 28592,
+  "promoter_preparation": "build/promoter_preparation.json",
+  "native_reference_validation": [
+    {
+      "path": "/data/hulei/HongtaoYu_Lab/Fetal_brain/Revision/GRN/GRN_resource/macaque/build/macfas5_Ensembl91_10kbp_up_10kbp_down_v10nr_public.genes_vs_motifs.rankings.feather",
+      "sha256": "51ec72aad3e99f7adc810bee72ee81b899dcb13b67b15605745006120c755502",
+      "gene_count": 28592,
+      "motif_count": 10249
+    },
+    {
+      "path": "/data/hulei/HongtaoYu_Lab/Fetal_brain/Revision/GRN/GRN_resource/macaque/build/macfas5_Ensembl91_500bp_up_100bp_down_v10nr_public.genes_vs_motifs.rankings.feather",
+      "sha256": "27f6885ce4836014ae3eb79032b81df527b4a7f6be0c648e02aa39e8b6c2f371",
+      "gene_count": 28592,
+      "motif_count": 10249
+    }
+  ],
+  "seed": 20261014
+}
